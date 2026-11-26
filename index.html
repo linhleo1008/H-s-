@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>탄칸린 (Thân Khánh Linh) · 현지화 QA 포트폴리오</title>
+  <meta name="description" content="실제 화면에서 검증하는 현지화 QA 탄칸린의 포트폴리오. 베트남어 원어민, 한국 거주 약 8년.">
+  <meta name="theme-color" content="#f5f6f8">
+  <meta property="og:title" content="Thân Khánh Linh (Leo) · Localization QA">
+  <meta property="og:description" content="실제 화면에서 검증하는 현지화 QA · KO / EN / VI">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232848c9'/%3E%3Cpath d='M9 16.5l4.5 4.5L23 11.5' fill='none' stroke='white' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">본문으로 건너뛰기</a>
+
+  <!-- ============ 상단 바 ============ -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#top" aria-label="Thân Khánh Linh (Leo)">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="brand__text">Leo<span class="brand__dim"> · Localization QA</span></span>
+      </a>
+
+      <nav class="nav" data-i18n-attr="aria-label:a11y.nav">
+        <ul>
+          <li><a href="#metrics" data-i18n="nav.metrics"></a></li>
+          <li><a href="#demo" data-i18n="nav.demo"></a></li>
+          <li><a href="#experience" data-i18n="nav.experience"></a></li>
+          <li><a href="#projects" data-i18n="nav.projects"></a></li>
+          <li><a href="#strengths" data-i18n="nav.strengths"></a></li>
+          <li><a href="#skills" data-i18n="nav.skills"></a></li>
+          <li><a href="#contact" data-i18n="nav.contact"></a></li>
+        </ul>
+      </nav>
+
+      <div class="lang" role="group" data-i18n-attr="aria-label:lang.label">
+        <button type="button" class="lang__btn" data-lang="ko" lang="ko" aria-label="한국어" aria-pressed="true">KO</button>
+        <button type="button" class="lang__btn" data-lang="en" lang="en" aria-label="English" aria-pressed="false">EN</button>
+        <button type="button" class="lang__btn" data-lang="vi" lang="vi" aria-label="Tiếng Việt" aria-pressed="false">VI</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <noscript><p class="container noscript">JavaScript를 켜면 내용이 표시됩니다. / Please enable JavaScript to view this page.</p></noscript>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top" aria-labelledby="hero-name">
+      <div class="container hero__grid">
+        <div class="hero__main">
+          <p class="eyebrow mono">QA REPORT · PORTFOLIO</p>
+          <h1 class="hero__name" id="hero-name" data-i18n="hero.name"></h1>
+          <p class="hero__alt mono" data-i18n="hero.alt"></p>
+          <p class="hero__tagline" data-i18n="hero.tagline"></p>
+          <ul class="chips" role="list">
+            <li class="chip" data-i18n="hero.chip1"></li>
+            <li class="chip" data-i18n="hero.chip2"></li>
+          </ul>
+          <p class="hero__sub" data-i18n="hero.sub"></p>
+
+          <div class="hero__actions">
+            <!-- 이력서 PDF 링크는 js/config.js 의 resumeUrl 에 입력 -->
+            <a class="btn btn--primary" data-config-link="resumeUrl" href="#">
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-i18n="hero.cta.resume"></span>
+            </a>
+            <a class="btn btn--ghost" href="#contact">
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path d="M4 6.5h16v11H4z M4.5 7l7.5 6 7.5-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+              <span data-i18n="hero.cta.contact"></span>
+            </a>
+          </div>
+
+          <!-- 인쇄할 때만 보이는 연락처 한 줄 (값은 js/config.js) -->
+          <p class="print-only print-contact">
+            <span data-contact="email"></span> · <span data-contact="phone"></span> · <span data-contact="linkedin"></span> · <span data-contact="instagram"></span>
+          </p>
+        </div>
+
+        <aside class="summary card" aria-labelledby="summary-title">
+          <div class="summary__head">
+            <h2 class="summary__title" id="summary-title" data-i18n="summary.title"></h2>
+            <span class="badge badge--pass">PASS</span>
+          </div>
+          <dl class="summary__meta">
+            <div><dt data-i18n="summary.tester"></dt><dd>Thân Khánh Linh</dd></div>
+            <div><dt data-i18n="summary.updated"></dt><dd data-i18n="summary.updatedValue"></dd></div>
+          </dl>
+          <ul class="summary__rows" role="list">
+            <li><span class="mono summary__code">KO</span><span data-i18n="summary.row.ko"></span><span class="badge badge--pass badge--sm">PASS</span></li>
+            <li><span class="mono summary__code">EN</span><span data-i18n="summary.row.en"></span><span class="badge badge--pass badge--sm">PASS</span></li>
+            <li><span class="mono summary__code">VI</span><span data-i18n="summary.row.vi"></span><span class="badge badge--pass badge--sm">PASS</span></li>
+            <li><span class="mono summary__code">MO</span><span data-i18n="summary.row.mobile"></span><span class="badge badge--pass badge--sm">PASS</span></li>
+            <li><span class="mono summary__code">PR</span><span data-i18n="summary.row.print"></span><span class="badge badge--pass badge--sm">PASS</span></li>
+          </ul>
+          <p class="summary__note" data-i18n="summary.note"></p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ TC-01 숫자로 보는 나 ============ -->
+    <section class="section" id="metrics" aria-labelledby="metrics-title">
+      <div class="container">
+        <header class="sec-head reveal">
+          <span class="tc-id mono">TC-01</span>
+          <h2 id="metrics-title" data-i18n="metrics.title"></h2>
+        </header>
+
+        <div class="metrics">
+          <article class="metric card metric--wide reveal">
+            <p class="metric__key mono">issues_found</p>
+            <p class="metric__value"><span data-i18n="metrics.n1.value"></span><span class="metric__unit" data-i18n="metrics.n1.unit"></span></p>
+            <p class="metric__label" data-i18n="metrics.n1.label"></p>
+            <div class="breakdown" role="img" data-i18n-attr="aria-label:metrics.n1.breakdownLabel">
+              <div class="breakdown__bar" aria-hidden="true">
+                <span style="--w:11" class="seg seg--1"></span><span style="--w:6" class="seg seg--2"></span><span style="--w:4" class="seg seg--3"></span><span style="--w:7" class="seg seg--4"></span>
+              </div>
+              <ul class="breakdown__legend" aria-hidden="true">
+                <li><i class="dot seg--1"></i><span data-i18n="metrics.n1.b1"></span><b>11</b></li>
+                <li><i class="dot seg--2"></i><span data-i18n="metrics.n1.b2"></span><b>6</b></li>
+                <li><i class="dot seg--3"></i><span data-i18n="metrics.n1.b3"></span><b>4</b></li>
+                <li><i class="dot seg--4"></i><span data-i18n="metrics.n1.b4"></span><b>7</b></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="metric card reveal">
+            <p class="metric__key mono">test_items_designed</p>
+            <p class="metric__value"><span data-i18n="metrics.n2.value"></span><span class="metric__unit" data-i18n="metrics.n2.unit"></span></p>
+            <p class="metric__label" data-i18n="metrics.n2.label"></p>
+          </article>
+
+          <article class="metric card reveal">
+            <p class="metric__key mono">legacy_terms_cleaned</p>
+            <p class="metric__value"><span data-i18n="metrics.n3.value"></span><span class="metric__unit" data-i18n="metrics.n3.unit"></span></p>
+            <p class="metric__label" data-i18n="metrics.n3.label"></p>
+          </article>
+
+          <article class="metric card reveal">
+            <p class="metric__key mono">languages</p>
+            <p class="metric__value"><span data-i18n="metrics.n4.value"></span><span class="metric__unit" data-i18n="metrics.n4.unit"></span></p>
+            <p class="metric__label" data-i18n="metrics.n4.label"></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TC-02 Before / After 데모 ============ -->
+    <section class="section section--tint no-print" id="demo" aria-labelledby="demo-title">
+      <div class="container">
+        <header class="sec-head reveal">
+          <span class="tc-id mono">TC-02</span>
+          <h2 id="demo-title" data-i18n="demo.title"></h2>
+        </header>
+        <p class="sec-desc reveal" data-i18n="demo.desc"></p>
+
+        <div class="demo reveal" data-state="before" id="demo-root">
+          <div class="demo__toggle" role="group" data-i18n-attr="aria-label:demo.toggleLabel">
+            <button type="button" class="demo__btn" data-demo="before" aria-pressed="true" aria-controls="demo-root">
+              <span class="demo__dot demo__dot--bug" aria-hidden="true"></span><span data-i18n="demo.before"></span>
+            </button>
+            <button type="button" class="demo__btn" data-demo="after" aria-pressed="false" aria-controls="demo-root">
+              <span class="demo__dot demo__dot--ok" aria-hidden="true"></span><span data-i18n="demo.after"></span>
+            </button>
+          </div>
+          <p class="visually-hidden" aria-live="polite" id="demo-live"></p>
+
+          <div class="demo__grid">
+            <!-- 직접 그린 가상의 앱 화면 (실제 회사 화면 아님). 스크린리더에는 오른쪽 이슈 목록으로 내용 전달 -->
+            <figure class="demo__figure">
+              <div class="phone" aria-hidden="true" lang="vi">
+                <div class="phone__notch"></div>
+                <div class="phone__status"><span>9:41</span><span class="phone__sys"><i></i><i></i><i></i></span></div>
+
+                <div class="appbar">
+                  <span class="appbar__back">‹</span>
+                  <span class="appbar__title">Cài đặt thông báo</span>
+                  <span class="appbar__action pin-wrap">
+                    <span class="when-before">저장</span><span class="when-after">Lưu</span>
+                    <span class="pin pin--3">3</span>
+                  </span>
+                </div>
+
+                <div class="tabs pin-wrap">
+                  <span class="tab is-active">Tất cả</span>
+                  <span class="tab">Đang diễn ra</span>
+                  <span class="tab">Đã kết thúc</span>
+                  <span class="pin pin--2">2</span>
+                </div>
+
+                <ul class="rows">
+                  <li class="row">
+                    <span class="row__icon row__icon--a"></span>
+                    <span class="row__body">
+                      <span class="row__title">Sự kiện cuối tuần</span>
+                      <span class="row__meta pin-wrap"><span class="when-before">2026.11.26</span><span class="when-after">26/11/2026</span><span class="pin pin--4">4</span></span>
+                    </span>
+                    <span class="switch is-on"></span>
+                  </li>
+                  <li class="row">
+                    <span class="row__icon row__icon--b"></span>
+                    <span class="row__body">
+                      <span class="row__title">Nhắc lịch hằng ngày</span>
+                      <span class="row__meta"><span class="when-before">2026.11.27</span><span class="when-after">27/11/2026</span></span>
+                    </span>
+                    <span class="switch"></span>
+                  </li>
+                  <li class="row">
+                    <span class="row__icon row__icon--c"></span>
+                    <span class="row__body">
+                      <span class="row__title">Tin tức mới</span>
+                      <span class="row__meta"><span class="when-before">2026.11.28</span><span class="when-after">28/11/2026</span></span>
+                    </span>
+                    <span class="switch is-on"></span>
+                  </li>
+                </ul>
+
+                <div class="cta pin-wrap">
+                  <span class="cta__btn">Nhận thông báo đẩy</span>
+                  <span class="pin pin--1">1</span>
+                </div>
+                <div class="phone__home"></div>
+              </div>
+              <figcaption class="demo__caption" data-i18n="demo.caption"></figcaption>
+            </figure>
+
+            <div class="issues">
+              <h3 class="issues__title" data-i18n="demo.issuesTitle"></h3>
+              <ol class="issues__list" role="list">
+                <li class="issue">
+                  <span class="issue__n" aria-hidden="true">1</span>
+                  <div class="issue__body">
+                    <p class="issue__head"><span class="mono issue__id">LQA-001</span><span class="tag" data-i18n="demo.type.ui"></span>
+                      <span class="badge badge--bug when-before">OPEN</span><span class="badge badge--fixed when-after">FIXED</span></p>
+                    <p class="issue__title" data-i18n="demo.i1.title"></p>
+                    <p class="issue__desc" data-i18n="demo.i1.desc"></p>
+                  </div>
+                </li>
+                <li class="issue">
+                  <span class="issue__n" aria-hidden="true">2</span>
+                  <div class="issue__body">
+                    <p class="issue__head"><span class="mono issue__id">LQA-002</span><span class="tag" data-i18n="demo.type.ui"></span>
+                      <span class="badge badge--bug when-before">OPEN</span><span class="badge badge--fixed when-after">FIXED</span></p>
+                    <p class="issue__title" data-i18n="demo.i2.title"></p>
+                    <p class="issue__desc" data-i18n="demo.i2.desc"></p>
+                  </div>
+                </li>
+                <li class="issue">
+                  <span class="issue__n" aria-hidden="true">3</span>
+                  <div class="issue__body">
+                    <p class="issue__head"><span class="mono issue__id">LQA-003</span><span class="tag" data-i18n="demo.type.string"></span>
+                      <span class="badge badge--bug when-before">OPEN</span><span class="badge badge--fixed when-after">FIXED</span></p>
+                    <p class="issue__title" data-i18n="demo.i3.title"></p>
+                    <p class="issue__desc" data-i18n="demo.i3.desc"></p>
+                  </div>
+                </li>
+                <li class="issue">
+                  <span class="issue__n" aria-hidden="true">4</span>
+                  <div class="issue__body">
+                    <p class="issue__head"><span class="mono issue__id">LQA-004</span><span class="tag" data-i18n="demo.type.format"></span>
+                      <span class="badge badge--bug when-before">OPEN</span><span class="badge badge--fixed when-after">FIXED</span></p>
+                    <p class="issue__title" data-i18n="demo.i4.title"></p>
+                    <p class="issue__desc" data-i18n="demo.i4.desc"></p>
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TC-03 경력 ============ -->
+    <section class="section" id="experience" aria-labelledby="exp-title">
+      <div class="container">
+        <header class="sec-head reveal">
+          <span class="tc-id mono">TC-03</span>
+          <h2 id="exp-title" data-i18n="exp.title"></h2>
+        </header>
+
+        <article class="job card reveal">
+          <header class="job__head">
+            <div class="job__who">
+              <h3 class="job__company" data-i18n="exp.j1.company"></h3>
+              <p class="job__role"><span data-i18n="exp.j1.dept"></span><span class="sep" aria-hidden="true">·</span><strong data-i18n="exp.j1.role"></strong></p>
+            </div>
+            <div class="job__when">
+              <span class="badge badge--pass" data-i18n="exp.current"></span>
+              <span class="job__period mono" data-i18n="exp.j1.period"></span>
+            </div>
+          </header>
+          <p class="job__summary" data-i18n="exp.j1.summary"></p>
+          <ul class="log" role="list">
+            <li><span class="log__tag mono">QA</span><p data-i18n="exp.j1.b1"></p></li>
+            <li><span class="log__tag mono">TRACKING</span><p data-i18n="exp.j1.b2"></p></li>
+            <li><span class="log__tag mono">TEST DESIGN</span><p data-i18n="exp.j1.b3"></p></li>
+            <li><span class="log__tag mono">QA</span><p data-i18n="exp.j1.b4"></p></li>
+            <li><span class="log__tag mono">BUG REPORT</span><p data-i18n="exp.j1.b5"></p></li>
+            <li><span class="log__tag mono">CMS</span><p data-i18n="exp.j1.b6"></p></li>
+            <li><span class="log__tag mono">RESEARCH</span><p data-i18n="exp.j1.b7"></p></li>
+            <li><span class="log__tag mono">DESIGN</span><p data-i18n="exp.j1.b8"></p></li>
+            <li><span class="log__tag mono">AI</span><p data-i18n="exp.j1.b9"></p></li>
+          </ul>
+        </article>
+
+        <article class="job card reveal">
+          <header class="job__head">
+            <div class="job__who">
+              <h3 class="job__company" data-i18n="exp.j2.company"></h3>
+              <p class="job__role"><strong data-i18n="exp.j2.role"></strong></p>
+            </div>
+            <div class="job__when">
+              <span class="job__period mono" data-i18n="exp.j2.period"></span>
+            </div>
+          </header>
+          <ul class="log" role="list">
+            <li><span class="log__tag mono">MARKETING</span><p data-i18n="exp.j2.b1"></p></li>
+            <li><span class="log__tag mono">LANGUAGE</span><p data-i18n="exp.j2.b2"></p></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ TC-04 프로젝트 ============ -->
+    <section class="section" id="projects" aria-labelledby="proj-title">
+      <div class="container">
+        <header class="sec-head reveal">
+          <span class="tc-id mono">TC-04</span>
+          <h2 id="proj-title" data-i18n="proj.title"></h2>
+        </header>
+        <div class="grid-3">
+          <article class="project card reveal">
+            <p class="project__role mono" data-i18n="proj.p1.role"></p>
+            <h3 class="project__title" data-i18n="proj.p1.title"></h3>
+            <p class="project__meta" data-i18n="proj.p1.meta"></p>
+            <p class="project__desc" data-i18n="proj.p1.desc"></p>
+          </article>
+          <article class="project card reveal">
+            <p class="project__role mono" data-i18n="proj.p2.role"></p>
+            <h3 class="project__title" data-i18n="proj.p2.title"></h3>
+            <p class="project__meta" data-i18n="proj.p2.meta"></p>
+            <p class="project__desc" data-i18n="proj.p2.desc"></p>
+          </article>
+          <article class="project card reveal">
+            <p class="project__role mono" data-i18n="proj.p3.role"></p>
+            <h3 class="project__title" data-i18n="proj.p3.title"></h3>
+            <p class="project__meta" data-i18n="proj.p3.meta"></p>
+            <p class="project__desc" data-i18n="proj.p3.desc"></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TC-05 일하는 방식 ============ -->
+    <section class="section section--tint" id="strengths" aria-labelledby="str-title">
+      <div class="container">
+        <header class="sec-head reveal">
+          <span class="tc-id mono">TC-05</span>
+          <h2 id="str-title" data-i18n="str.title"></h2>
+        </header>
+        <div class="grid-3">
+          <article class="strength card reveal">
+            <span class="strength__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22"><circle cx="10.5" cy="10.5" r="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15 15l5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </span>
+            <h3 data-i18n="str.s1.title"></h3>
+            <p data-i18n="str.s1.desc"></p>
+          </article>
+          <article class="strength card reveal">
+            <span class="strength__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22"><rect x="5" y="3.5" width="14" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8.5 9h7M8.5 12.5h7M8.5 16h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </span>
+            <h3 data-i18n="str.s2.title"></h3>
+            <p data-i18n="str.s2.desc"></p>
+          </article>
+          <article class="strength card reveal">
+            <span class="strength__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22"><circle cx="12" cy="8.5" r="3.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 20c.8-3.6 3.6-5.5 7-5.5s6.2 1.9 7 5.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </span>
+            <h3 data-i18n="str.s3.title"></h3>
+            <p data-i18n="str.s3.desc"></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TC-06 스킬 / TC-07 학력 ============ -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="sec-head reveal">
+          <span class="tc-id mono">TC-06</span>
+          <h2 id="skills-title" data-i18n="skills.title"></h2>
+        </header>
+        <div class="skills card reveal">
+          <div class="skills__group">
+            <h3 data-i18n="skills.g1"></h3>
+            <ul role="list">
+              <li data-i18n="skills.g1.i1"></li><li data-i18n="skills.g1.i2"></li><li data-i18n="skills.g1.i3"></li><li data-i18n="skills.g1.i4"></li>
+            </ul>
+          </div>
+          <div class="skills__group">
+            <h3 data-i18n="skills.g2"></h3>
+            <ul role="list"><li data-i18n="skills.g2.i1"></li><li data-i18n="skills.g2.i2"></li></ul>
+          </div>
+          <div class="skills__group">
+            <h3 data-i18n="skills.g3"></h3>
+            <ul role="list">
+              <li data-i18n="skills.g3.i1"></li><li data-i18n="skills.g3.i2"></li><li data-i18n="skills.g3.i3"></li><li data-i18n="skills.g3.i4"></li>
+            </ul>
+          </div>
+          <div class="skills__group">
+            <h3 data-i18n="skills.g4"></h3>
+            <ul role="list"><li data-i18n="skills.g4.i1"></li></ul>
+          </div>
+        </div>
+
+        <header class="sec-head sec-head--sub reveal" id="education">
+          <span class="tc-id mono">TC-07</span>
+          <h2 data-i18n="edu.title"></h2>
+        </header>
+        <!-- 졸업년월은 js/config.js 의 gradDate 에 입력 -->
+        <div class="edu card reveal">
+          <div>
+            <h3 class="edu__school" data-i18n="edu.school"></h3>
+            <p class="edu__degree" data-i18n="edu.degree"></p>
+          </div>
+          <span class="edu__date mono" data-i18n="edu.date"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TC-08 Beyond Work ============ -->
+    <section class="section section--compact" id="beyond" aria-labelledby="beyond-title">
+      <div class="container">
+        <header class="sec-head reveal">
+          <span class="tc-id mono">TC-08</span>
+          <h2 id="beyond-title" data-i18n="beyond.title"></h2>
+        </header>
+        <div class="grid-2">
+          <article class="beyond reveal">
+            <h3 data-i18n="beyond.b1.title"></h3>
+            <p data-i18n="beyond.b1.desc"></p>
+          </article>
+          <article class="beyond reveal">
+            <h3 data-i18n="beyond.b2.title"></h3>
+            <p data-i18n="beyond.b2.desc"></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TC-09 연락처 ============ -->
+    <!-- 연락처 값(이메일·전화·LinkedIn)은 js/config.js 에서 입력하세요. 빈칸이면 [이메일] 처럼 표시됩니다. -->
+    <section class="section section--contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="sec-head reveal">
+          <span class="tc-id mono">TC-09</span>
+          <h2 id="contact-title" data-i18n="contact.title"></h2>
+        </header>
+        <p class="sec-desc reveal" data-i18n="contact.lead"></p>
+        <ul class="contact reveal" role="list">
+          <li class="contact__item"><span class="contact__label" data-i18n="contact.email"></span><a class="contact__value" data-contact="email"></a></li>
+          <li class="contact__item"><span class="contact__label" data-i18n="contact.phone"></span><a class="contact__value" data-contact="phone"></a></li>
+          <li class="contact__item"><span class="contact__label" data-i18n="contact.linkedin"></span><a class="contact__value" data-contact="linkedin"></a></li>
+          <li class="contact__item"><span class="contact__label" data-i18n="contact.instagram"></span><a class="contact__value" data-contact="instagram"></a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__log mono" aria-hidden="true">
+        <span class="badge badge--pass badge--sm">PASS</span> KO · EN · VI &nbsp;/&nbsp; 360px – 1440px &nbsp;/&nbsp; A4 print
+      </p>
+      <p class="footer__note" data-i18n="footer.note"></p>
+      <p class="footer__copy"><span data-i18n="footer.copy"></span> · <a href="#top" data-i18n="footer.top"></a></p>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
